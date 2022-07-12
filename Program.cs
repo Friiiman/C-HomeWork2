@@ -7,6 +7,7 @@
 
     Console.Write("Введите число: ");
     int number = Convert.ToInt32(Console.ReadLine());
+    number = Math.Abs(number);
     string result = " - третья цифра данного числа";
 
     while(number >= 999){
