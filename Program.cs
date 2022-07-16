@@ -10,7 +10,7 @@
     number = Math.Abs(number);
     string result = " - третья цифра данного числа";
 
-    while(number >= 999){
+    while(number > 999){
         number /= 10;
     }
 
@@ -18,7 +18,7 @@
         result = "Третьей цифры нет";
     }
     else{
-        result = $"{number % 10}" + result;
+        result = number % 10 + result;
     }
 
     Console.WriteLine(result);
